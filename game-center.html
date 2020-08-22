@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ゲームセンター</title>
+  <link rel="stylesheet" href="game-center.css">
+  <link rel="stylesheet" href="bingo/bingo.css">
+  <link rel="stylesheet" href="coin/coin-game.css">
+  <link rel="stylesheet" href="haetataki/haetataki.css">
+  <link rel="stylesheet" href="slot/slot.css">
+  <link rel="stylesheet" href="block-break/block-break.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="game-center.js"></script>
+  <script src="slot/jquery.easing.1.3.js"></script>
+  <script src="haetataki/jQueryRotate.js"></script>
+  <script src="bingo/bingo.js"></script>
+  <script src="coin/coin-game.js"></script>
+  <script src="haetataki/haetataki.js"></script>
+  <script src="slot/slot.js"></script>
+  <script src="block-break/block-break.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main-game-center">
+      <div class="top-slot">
+        <img src="icon/slot.png" class="slot-img">
+      </div>
+      <div class="top-haetataki">
+        <img src="icon/tatakihae.png" class="haetataki-img">
+
+      </div>
+      <div class="top-coin">
+        <img src="icon/coin.png" class="coin-img">
+      </div>
+      <div class="top-block">
+        <img src="icon/block.png" class="block-img">
+      </div>
+      <div class="top-bingo">
+        <img src="icon/bingo.png" class="bingo-img">
+      </div>
+
+
+      <div class="main-slot-content-display-none">
+        <div class="slot-content">
+          <div id="slotbox">
+            <div id="slots_a">
+              <div class="wrapper"></div>
+              <div class="slotglass-top"></div>
+              <div class="slotglass-bottom"></div>
+              <div class="slotline"></div>
+            </div>
+            <div id="slots_b">
+              <div class="wrapper"></div>
+              <div class="slotglass-top"></div>
+              <div class="slotglass-bottom"></div>
+              <div class="slotline"></div>
+            </div>
+            <div id="slots_c">
+              <div class="wrapper"></div>
+              <div class="slotglass-top"></div>
+              <div class="slotglass-bottom"></div>
+              <div class="slotline"></div>
+            </div>
+            <br style="clear: both" />
+            <div id="slotMsg">Let' Start<br/></div>
+            <input id="startBtn" type="button" value="START" />
+          </div>
+          <input class="slotBtn finishBtn" type="button" value="戻る" />
+        </div>
+      </div>
+
+      <div class="main-haetataki-content-display-none">
+        <div class="haetataki-content">
+          <div id="stage">
+            <div id="start"><img class=IMG src="haetataki/start.png"></div>
+            <button class="mushi"></button>
+          </div>
+          <div id="text">
+            <div id="count">COUNT:<span>30</span></div>
+            <div id="score">SCORE:<span>0</span></div>
+          </div>
+          <input class="haetatakiBtn finishBtn" type="button" value="戻る" />
+        </div>
+      </div>
+
+      <div class="main-coin-content-display-none">
+        <div class="coin-content">
+            <ul class="sheet"></ul>
+          <input class="coinBtn finishBtn" type="button" value="戻る" />
+        </div>
+      </div>
+
+      <div class="main-block-content-display-none">
+        <div class="block-content">
+          <canvas id="myCanvas" width="480" height="320"></canvas>
+          <input class="blockStartBtn" type="button" value="スタート" />
+          <input class="blockBtn finishBtn" type="button" value="戻る" />
+        </div>
+      </div>
+
+      <div class="main-bingo-content-display-none">
+        <div class="bingo-content">
+          <div id="result" class="result"></div>
+            <ul id="number" class="number"></ul>
+            <div class="wrapper-button">
+              <button id="button" class="button">START</button>
+            </div>
+            <audio id="sound-play" preload="auto">
+              <source src="bingo/start.mp3" type="audio/mp3">
+            </audio>
+            <audio id="sound-pause" preload="auto">
+              <source src="bingo/pause.mp3" type="audio/mp3">
+            </audio>
+            <input class="bingoBtn finishBtn" type="button" value="戻る" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

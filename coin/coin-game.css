@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html , body {
+  width: 100%;
+  height: 100%;
+}
+
+.sheet{
+  width: 100%;
+  text-align: center;
+}
+.sheet li{
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  cursor: pointer;
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.sheet li.normal{
+  background-image: url("http://www.otwo.jp/blog/demo/coin/normal.png");
+}
+.sheet li.safe{
+  background-image: url("http://www.otwo.jp/blog/demo/coin/safe.png");
+}
+.sheet li.out{
+  background-image: url("http://www.otwo.jp/blog/demo/coin/out.png");
+}
