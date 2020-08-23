@@ -17,7 +17,7 @@ $(function(){
   function notice(li){
     if (li.data("role") == "2" ){
       li.attr("class","out");
-      $(".coin-content").css("background-image","url(http://www.otwo.jp/blog/demo/coin/bg_hazure.png)");
+      $(".coin-content").css("background-image","url(//www.otwo.jp/blog/demo/coin/bg_hazure.png)");
     }else{
       li.attr("class","safe");
     }
