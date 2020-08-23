@@ -73,7 +73,7 @@ html , body , .wrapper{
 }
 
 .coin-content{
-  background-image: url("http://www.otwo.jp/blog/demo/coin/bg.png");
+  background-image: url("//www.otwo.jp/blog/demo/coin/bg.png");
   height: 600px;
   width: 850px;
   position: absolute;
