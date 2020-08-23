@@ -30,7 +30,8 @@ html , body , .wrapper{
   top: 200px;
   left: 500px;
   padding-top: 50px;
-  z-index: 999;
+  z-index: 2;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.8);
 }
 
@@ -54,7 +55,8 @@ html , body , .wrapper{
   top: 70px;
   left: 300px;
   padding-top: 50px;
-  z-index: 999;
+  z-index: 2;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.8);
 }
 
@@ -78,7 +80,8 @@ html , body , .wrapper{
   top: 70px;
   left: 300px;
   padding-top: 50px;
-  z-index: 999;
+  z-index: 2;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.8);
 }
 
@@ -102,7 +105,8 @@ html , body , .wrapper{
   top: 70px;
   left: 350px;
   padding-top: 50px;
-  z-index: 998;
+  z-index: 2;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.8);
 }
 
@@ -127,7 +131,8 @@ html , body , .wrapper{
   top: 30px;
   left: 350px;
   padding-top: 50px;
-  z-index: 998;
+  z-index: 2;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.8);
 }
 
@@ -152,15 +157,15 @@ html , body , .wrapper{
 }
 
 .slotBtn{
-  margin: 80px 0 0 110px;
+  margin: 50px 0 0 110px;
 }
 
 .haetatakiBtn{
-  margin: 45px 0 0 370px;
+  margin: 30px 0 0 370px;
 }
 
 .coinBtn{
-  margin: 200px 0 0 370px;
+  margin: 50px 0 0 370px;
 }
 
 .blockBtn{
@@ -177,7 +182,7 @@ html , body , .wrapper{
 }
 
 .bingoBtn{
-  margin: 0 0 0 260px;
+  margin: 0 0 0 50px;
 }
 
 .finishBtn{
@@ -185,4 +190,33 @@ html , body , .wrapper{
   color:white;
   width: 80px;
   border-radius: 5px;
+}
+
+#dlslot{
+  z-index: 3;
+}
+
+#dlslotbtn{
+  width: 80px;
+  margin: 20px 0 0 110px;
+}
+
+#dlhaetatakibtn{
+  width: 80px;
+  margin: 0 0 0 370px;
+}
+
+#dlcoinbtn{
+  width: 80px;
+  margin: 160px 0 0 370px;
+}
+
+#dlblockbtn{
+  margin-left: 50px;
+  width: 80px;
+}
+
+#dlbingobtn{
+  margin-left: 200px;
+  width: 80px;
 }

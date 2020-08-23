@@ -41,6 +41,45 @@ $(function(){
   })
 
 
+    $("#dlslotbtn").click(function() {
+      $("#dlslot").dialog({
+        modal:true,
+        title:"スロット遊び方",
+        buttons: {"OK": function() {$(this).dialog("close");}}
+      });
+    });
+
+    $("#dlhaetatakibtn").click(function() {
+      $("#dlhaetataki").dialog({
+        modal:true,
+        title:"ハエ叩き遊び方",
+        buttons: {"OK": function() {$(this).dialog("close");}}
+      });
+    });
+
+    $("#dlcoinbtn").click(function() {
+      $("#dlcoin").dialog({
+        modal:true,
+        title:"コインかえし遊び方",
+        buttons: {"OK": function() {$(this).dialog("close");}}
+      });
+    });
+
+    $("#dlblockbtn").click(function() {
+      $("#dlblock").dialog({
+        modal:true,
+        title:"ブロックくずしの遊び方",
+        buttons: {"OK": function() {$(this).dialog("close");}}
+      });
+    });
+
+    $("#dlbingobtn").click(function() {
+      $("#dlbingo").dialog({
+        modal:true,
+        title:"ビンゴルーレットの遊び方",
+        buttons: {"OK": function() {$(this).dialog("close");}}
+      });
+    });
 
 })
 

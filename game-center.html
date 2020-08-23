@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="slot/slot.css">
   <link rel="stylesheet" href="block-break/block-break.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+
   <script src="game-center.js"></script>
   <script src="slot/jquery.easing.1.3.js"></script>
   <script src="haetataki/jQueryRotate.js"></script>
@@ -18,6 +23,7 @@
   <script src="haetataki/haetataki.js"></script>
   <script src="slot/slot.js"></script>
   <script src="block-break/block-break.js"></script>
+
 </head>
 <body>
   <div class="wrapper">
@@ -65,6 +71,12 @@
             <div id="slotMsg">Let' Start<br/></div>
             <input id="startBtn" type="button" value="START" />
           </div>
+          <div id="dlslot" style="display:none;">
+            <p>スタートを押してスロットを回してね！絵柄が揃えばビンゴぉぉぉ！</p>
+          </div>
+          <div>
+            <input type="button" id="dlslotbtn" value="遊び方">
+          </div>
           <input class="slotBtn finishBtn" type="button" value="戻る" />
         </div>
       </div>
@@ -79,6 +91,13 @@
             <div id="count">COUNT:<span>30</span></div>
             <div id="score">SCORE:<span>0</span></div>
           </div>
+          <div id="dlhaetataki" style="display:none;">
+            <p>スタートを押すとゲーム開始！ハエがどんどん出てくるから
+              マウスでクリックして叩こう！</p>
+          </div>
+          <div>
+            <input type="button" id="dlhaetatakibtn" value="遊び方">
+          </div>
           <input class="haetatakiBtn finishBtn" type="button" value="戻る" />
         </div>
       </div>
@@ -86,6 +105,12 @@
       <div class="main-coin-content-display-none">
         <div class="coin-content">
             <ul class="sheet"></ul>
+            <div id="dlcoin" style="display:none;">
+              <p>コインをクリックしよう！3枚の内一枚がハズレだよ！</p>
+            </div>
+            <div>
+              <input type="button" id="dlcoinbtn" value="遊び方">
+            </div>
           <input class="coinBtn finishBtn" type="button" value="戻る" />
         </div>
       </div>
@@ -94,6 +119,13 @@
         <div class="block-content">
           <canvas id="myCanvas" width="480" height="320"></canvas>
           <input class="blockStartBtn" type="button" value="スタート" />
+          <div id="dlblock" style="display:none;">
+            <p>スタートボタンで始まるよ！ボールが下に落ちたらGAME OVER！！
+              3回まではライフはあるよ！落ちないようにバーを動かしブロックを
+              壊していこう！全部こわせたらクリア！
+            </p>
+          </div>
+          <input type="button" id="dlblockbtn" value="遊び方">
           <input class="blockBtn finishBtn" type="button" value="戻る" />
         </div>
       </div>
@@ -111,6 +143,14 @@
             <audio id="sound-pause" preload="auto">
               <source src="bingo/pause.mp3" type="audio/mp3">
             </audio>
+            <div id="dlbingo" style="display:none;">
+              <p>まずはビンゴ用の紙を用意して5×5のマスをつくり
+                1〜50の数字をランダムに入れてね！STARTを押しSTOPを
+                押すと数字が決まるからどんどんマスを埋めていこう！
+                ただルーレットを回すだけでも面白いよ（笑）
+              </p>
+            </div>
+            <input type="button" id="dlbingobtn" value="遊び方">
             <input class="bingoBtn finishBtn" type="button" value="戻る" />
         </div>
       </div>
